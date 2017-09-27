@@ -21,8 +21,8 @@ $("#userSearch").on('click', function() {
 
         for (var i = 0; i < resultTitles.length; i ++) {
           var list = "";
-          list = "<a href="+resultURL[i]+"><li>"+resultTitles[i]+"<br>"+resultDescription[i]+"</li></a><br>";
-          $("#demo").append(list);
+          list = '<a target="_blank" href='+resultURL[i]+"><li><b>"+resultTitles[i]+"</b><br>"+resultDescription[i]+"</li></a><br>";
+          $("#wikiLinks").append(list);
         }
       }
     });
